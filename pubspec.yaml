@@ -1,0 +1,47 @@
+name: flutter_application_1
+description: A new Flutter project for Chácara Booking.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter  
+  
+  # Banco de dados SQLite - versões compatíveis
+  sqflite: ^2.3.0
+  sqflite_common_ffi_web: ^0.4.2+2  # ⭐ ADICIONADO: Suporte web para SQLite
+  path: ^1.8.3
+  intl: ^0.18.1
+  
+  # Formatação de máscaras de texto
+  mask_text_input_formatter: ^2.4.0
+  
+  # Ícones do Material Design
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Configuração para assets (descomente se necessário)
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # Configuração para fontes customizadas (descomente se necessário)
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
