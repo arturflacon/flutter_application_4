@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import '../components/custom_app_bar.dart';
 import '../components/custom_card.dart';
 import '../components/status_chip.dart';
 import '../models/agendamento.dart';
 import '../database/database_helper.dart';
+import 'package:intl/intl.dart';
 
 class AgendamentoDetalhesScreen extends StatefulWidget {
   final Agendamento agendamento;

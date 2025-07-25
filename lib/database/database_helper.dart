@@ -5,10 +5,7 @@ import '../models/cliente.dart';
 import '../models/servico.dart';
 import '../models/agendamento.dart';
 import '../models/agendamento_servico.dart';
-
-// ⭐ CORREÇÃO: Importações condicionais para diferentes plataformas
-import 'package:sqflite/sqflite.dart'
-    if (dart.library.html) 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
+import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
 class DatabaseHelper {
@@ -20,7 +17,6 @@ class DatabaseHelper {
   Future<Database> get database async {
     if (_database != null) return _database!;
 
-    // ⭐ CORREÇÃO: Verificar se estamos no ambiente web
     if (kIsWeb) {
       throw UnsupportedError('SQLite não é suportado nativamente no navegador. '
           'Execute a aplicação em um dispositivo móvel ou desktop.');

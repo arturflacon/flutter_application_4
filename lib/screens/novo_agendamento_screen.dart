@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import '../components/custom_app_bar.dart';
 import '../components/custom_card.dart';
 import '../models/cliente.dart';
@@ -7,6 +6,7 @@ import '../models/servico.dart';
 import '../models/agendamento.dart';
 import '../models/agendamento_servico.dart';
 import '../database/database_helper.dart';
+import 'package:intl/intl.dart';
 
 class NovoAgendamentoScreen extends StatefulWidget {
   const NovoAgendamentoScreen({Key? key}) : super(key: key);

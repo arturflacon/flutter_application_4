@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import '../components/custom_app_bar.dart';
 import '../components/custom_card.dart';
 import '../components/status_chip.dart';
 import '../models/agendamento.dart';
 import '../database/database_helper.dart';
 import 'agendamento_detalhes_screen.dart';
+import 'package:intl/intl.dart';
 
 class AgendamentosScreen extends StatefulWidget {
   const AgendamentosScreen({Key? key}) : super(key: key);
